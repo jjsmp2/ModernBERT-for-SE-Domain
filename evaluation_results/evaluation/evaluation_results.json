@@ -1,0 +1,74 @@
+{
+  "intrinsic_evaluation": {
+    "word_similarity": {
+      "word2vec": {
+        "spearman_correlation": -0.04943904062886604,
+        "p_value": 0.8027171476857516,
+        "pairs_evaluated": 28,
+        "coverage": 0.5714285714285714
+      }
+    },
+    "analogies": {
+      "word2vec": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 5,
+        "coverage": 0.25
+      }
+    },
+    "vocabulary_coverage": {
+      "word2vec": {
+        "coverage_ratio": 0.35,
+        "covered_words": 56,
+        "total_words": 160,
+        "missing_words": 104
+      }
+    },
+    "clustering": {
+      "word2vec": {
+        "avg_silhouette": "0.095238075",
+        "n_clusters": 5,
+        "words_clustered": 30,
+        "coverage": 0.5882352941176471
+      }
+    }
+  },
+  "extrinsic_evaluation": {
+    "classification": {
+      "word2vec": {
+        "logistic_regression": {
+          "f1_scores": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean_f1": 0.0,
+          "std_f1": 0.0
+        },
+        "documents_used": 15,
+        "total_documents": 15
+      }
+    }
+  },
+  "performance_benchmarks": {
+    "word2vec": {
+      "similarity_computation_time_ms": 0.005910396575927734,
+      "vocabulary_size": 1339,
+      "vector_size": 300
+    },
+    "modernbert": {
+      "status": "not_available"
+    }
+  },
+  "model_info": {
+    "word2vec": {
+      "vocabulary_size": 1339,
+      "vector_size": 300,
+      "total_words": 35432,
+      "epochs": 20
+    },
+    "modernbert": {
+      "status": "not_loaded"
+    }
+  }
+}

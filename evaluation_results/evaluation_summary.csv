@@ -1,0 +1,16 @@
+category,metric,sub_metric,model,value
+intrinsic,word_similarity,spearman_correlation,word2vec,-0.04943904062886604
+intrinsic,word_similarity,p_value,word2vec,0.8027171476857516
+intrinsic,word_similarity,pairs_evaluated,word2vec,28.0
+intrinsic,word_similarity,coverage,word2vec,0.5714285714285714
+intrinsic,analogies,accuracy,word2vec,0.0
+intrinsic,analogies,correct,word2vec,0.0
+intrinsic,analogies,total,word2vec,5.0
+intrinsic,analogies,coverage,word2vec,0.25
+intrinsic,vocabulary_coverage,coverage_ratio,word2vec,0.35
+intrinsic,vocabulary_coverage,covered_words,word2vec,56.0
+intrinsic,vocabulary_coverage,total_words,word2vec,160.0
+intrinsic,vocabulary_coverage,missing_words,word2vec,104.0
+intrinsic,clustering,n_clusters,word2vec,5.0
+intrinsic,clustering,words_clustered,word2vec,30.0
+intrinsic,clustering,coverage,word2vec,0.5882352941176471

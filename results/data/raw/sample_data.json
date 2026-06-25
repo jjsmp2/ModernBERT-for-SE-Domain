@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Introduction to Software Engineering - Part 1",
+    "text": "Software engineering is the systematic application of engineering approaches to the development of software. It involves the use of principles from computer science, engineering, and mathematical analysis to design, develop, test, and maintain software systems.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.2767181
+  },
+  {
+    "title": "Object-Oriented Programming Concepts - Part 2",
+    "text": "Object-oriented programming (OOP) is a programming paradigm based on the concept of objects, which can contain data and code. The main principles of OOP include encapsulation, inheritance, and polymorphism.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276719
+  },
+  {
+    "title": "Data Structures and Algorithms - Part 3",
+    "text": "Data structures are ways of organizing and storing data so that they can be accessed and worked with efficiently. Common data structures include arrays, linked lists, stacks, queues, trees, and graphs.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.27672
+  },
+  {
+    "title": "Machine Learning in Software Development - Part 4",
+    "text": "Machine learning is increasingly being integrated into software development processes. It can be used for automated testing, code generation, bug detection, and performance optimization.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276721
+  },
+  {
+    "title": "Web Development Best Practices - Part 5",
+    "text": "Web development involves creating websites and web applications. Best practices include responsive design, accessibility, security considerations, performance optimization, and following web standards.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276721
+  },
+  {
+    "title": "Introduction to Software Engineering - Part 6",
+    "text": "Software engineering is the systematic application of engineering approaches to the development of software. It involves the use of principles from computer science, engineering, and mathematical analysis to design, develop, test, and maintain software systems.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276722
+  },
+  {
+    "title": "Object-Oriented Programming Concepts - Part 7",
+    "text": "Object-oriented programming (OOP) is a programming paradigm based on the concept of objects, which can contain data and code. The main principles of OOP include encapsulation, inheritance, and polymorphism.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276723
+  },
+  {
+    "title": "Data Structures and Algorithms - Part 8",
+    "text": "Data structures are ways of organizing and storing data so that they can be accessed and worked with efficiently. Common data structures include arrays, linked lists, stacks, queues, trees, and graphs.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276723
+  },
+  {
+    "title": "Machine Learning in Software Development - Part 9",
+    "text": "Machine learning is increasingly being integrated into software development processes. It can be used for automated testing, code generation, bug detection, and performance optimization.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.2767239
+  },
+  {
+    "title": "Web Development Best Practices - Part 10",
+    "text": "Web development involves creating websites and web applications. Best practices include responsive design, accessibility, security considerations, performance optimization, and following web standards.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276725
+  },
+  {
+    "title": "Introduction to Software Engineering - Part 11",
+    "text": "Software engineering is the systematic application of engineering approaches to the development of software. It involves the use of principles from computer science, engineering, and mathematical analysis to design, develop, test, and maintain software systems.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276725
+  },
+  {
+    "title": "Object-Oriented Programming Concepts - Part 12",
+    "text": "Object-oriented programming (OOP) is a programming paradigm based on the concept of objects, which can contain data and code. The main principles of OOP include encapsulation, inheritance, and polymorphism.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276726
+  },
+  {
+    "title": "Data Structures and Algorithms - Part 13",
+    "text": "Data structures are ways of organizing and storing data so that they can be accessed and worked with efficiently. Common data structures include arrays, linked lists, stacks, queues, trees, and graphs.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276726
+  },
+  {
+    "title": "Machine Learning in Software Development - Part 14",
+    "text": "Machine learning is increasingly being integrated into software development processes. It can be used for automated testing, code generation, bug detection, and performance optimization.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276727
+  },
+  {
+    "title": "Web Development Best Practices - Part 15",
+    "text": "Web development involves creating websites and web applications. Best practices include responsive design, accessibility, security considerations, performance optimization, and following web standards.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.2767282
+  },
+  {
+    "title": "Introduction to Software Engineering - Part 16",
+    "text": "Software engineering is the systematic application of engineering approaches to the development of software. It involves the use of principles from computer science, engineering, and mathematical analysis to design, develop, test, and maintain software systems.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276729
+  },
+  {
+    "title": "Object-Oriented Programming Concepts - Part 17",
+    "text": "Object-oriented programming (OOP) is a programming paradigm based on the concept of objects, which can contain data and code. The main principles of OOP include encapsulation, inheritance, and polymorphism.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.276729
+  },
+  {
+    "title": "Data Structures and Algorithms - Part 18",
+    "text": "Data structures are ways of organizing and storing data so that they can be accessed and worked with efficiently. Common data structures include arrays, linked lists, stacks, queues, trees, and graphs.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.27673
+  },
+  {
+    "title": "Machine Learning in Software Development - Part 19",
+    "text": "Machine learning is increasingly being integrated into software development processes. It can be used for automated testing, code generation, bug detection, and performance optimization.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.2767308
+  },
+  {
+    "title": "Web Development Best Practices - Part 20",
+    "text": "Web development involves creating websites and web applications. Best practices include responsive design, accessibility, security considerations, performance optimization, and following web standards.",
+    "source": "sample",
+    "type": "educational",
+    "timestamp": 1750402074.2767308
+  }
+]

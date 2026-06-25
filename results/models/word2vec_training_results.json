@@ -1,0 +1,15 @@
+{
+  "training_time": 2.8189809322357178,
+  "vocabulary_size": 1339,
+  "vector_size": 300,
+  "total_sentences": 403,
+  "epochs": 20,
+  "model_parameters": {
+    "vector_size": 300,
+    "window": 10,
+    "min_count": 5,
+    "sg": 1,
+    "hs": 0,
+    "negative": 10
+  }
+}

@@ -1,0 +1,317 @@
+# SUBMISSION READY - Full-scale configuration for production research
+# Optimized for comprehensive evaluation and publication-quality results
+
+# Project configuration
+project:
+  name: "SE Word Embeddings Comparison"
+  version: "1.0.0"
+  description: "Comprehensive comparison of Word2Vec and ModernBERT for Software Engineering tasks"
+
+# System configuration
+system:
+  log_level: INFO
+  random_seed: 42
+  device: auto  # auto, cpu, cuda, mps
+
+# Paths configuration
+paths:
+  data_raw: "results/data/raw"
+  data_processed: "results/data/processed"
+  models: "results/models"
+  evaluations: "results/evaluations"
+  reports: "results/reports"
+  figures: "results/figures"
+  logs: "results/logs"
+
+# Logging configuration
+logging:
+  level: INFO
+  file: "results/logs/se_embeddings.log"
+  console: true
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  max_file_size: "10MB"
+  backup_count: 5
+
+# Data collection configuration - FULL SCALE
+data_collection:
+  wikipedia:
+    enabled: true
+    max_articles: 5000
+    search_terms:
+      - "software engineering"
+      - "computer programming"
+      - "algorithm"
+      - "data structure"
+      - "database"
+      - "web development"
+      - "machine learning"
+      - "artificial intelligence"
+      - "software architecture"
+      - "programming language"
+      - "software testing"
+      - "version control"
+      - "DevOps"
+      - "agile software development"
+      - "object-oriented programming"
+
+  github:
+    enabled: true
+    max_repos: 2000
+    languages:
+      - "Python"
+      - "JavaScript"
+      - "Java"
+      - "TypeScript"
+      - "Go"
+      - "C++"
+      - "C#"
+      - "Rust"
+    min_stars: 100
+
+  stackoverflow:
+    enabled: true
+    max_posts: 10000
+    tags:
+      - python
+      - javascript
+      - java
+      - algorithm
+      - data-structures
+      - machine-learning
+      - web-development
+      - database
+      - software-engineering
+      - programming
+      - coding
+      - software-design
+      - architecture
+      - performance
+      - debugging
+    min_score: 5
+
+  arxiv:
+    enabled: true
+    max_papers: 1000
+    categories:
+      - "cs.SE"  # Software Engineering
+      - "cs.LG"  # Machine Learning
+      - "cs.AI"  # Artificial Intelligence
+      - "cs.DB"  # Databases
+      - "cs.PL"  # Programming Languages
+
+# Data preprocessing configuration - PRODUCTION QUALITY
+preprocessing:
+  remove_html: true
+  remove_urls: true
+  remove_emails: true
+  remove_special_chars: true
+  normalize_whitespace: true
+  detect_language: true
+  target_language: en
+  language_confidence_threshold: 0.8
+  min_doc_length: 100
+  max_doc_length: 10000
+  min_word_count: 20
+  max_word_count: 2000
+  se_relevance_threshold: 0.05
+  se_keywords:
+    - software
+    - programming
+    - algorithm
+    - code
+    - function
+    - class
+    - method
+    - variable
+    - database
+    - framework
+    - library
+    - api
+    - development
+    - engineering
+    - computer
+    - system
+    - application
+    - interface
+    - architecture
+    - design
+    - python
+    - javascript
+    - java
+    - react
+    - tensorflow
+    - machine
+    - learning
+    - data
+    - web
+    - technology
+    - debugging
+    - testing
+    - deployment
+    - version
+    - control
+    - git
+    - docker
+    - kubernetes
+    - microservices
+    - backend
+    - frontend
+    - fullstack
+    - devops
+    - agile
+    - scrum
+    - performance
+    - optimization
+    - security
+    - authentication
+    - authorization
+    - encryption
+    - networking
+    - protocol
+    - server
+    - client
+    - mobile
+    - android
+    - ios
+    - cloud
+    - aws
+    - azure
+    - gcp
+  remove_duplicates: true
+  similarity_threshold: 0.85
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+  random_seed: 42
+
+# Model configurations
+models:
+  word2vec:
+    vector_size: 300
+    window: 10
+    min_count: 5
+    workers: 8
+    epochs: 20
+    sg: 1                  # Skip-gram
+    hs: 0                  # Negative sampling
+    negative: 10
+    alpha: 0.025
+    min_alpha: 0.0001
+    batch_size: 10000
+    max_vocab_size: 100000
+    classification:
+      enabled: true
+      test_size: 0.2
+      random_state: 42
+
+  modernbert:
+    model_name: "answerdotai/ModernBERT-base"
+    max_length: 512
+    batch_size: 8
+    learning_rate: 2e-5
+    num_epochs: 5
+    warmup_steps: 500
+    weight_decay: 0.01
+    save_steps: 500
+    eval_steps: 250
+    logging_steps: 50
+    gradient_accumulation_steps: 2
+    fp16: true
+    early_stopping_patience: 3
+    early_stopping_threshold: 0.001
+
+# Evaluation configuration
+evaluation:
+  # Tasks to run
+  tasks:
+    classification: true
+    similarity: true
+    clustering: true
+    analogies: true
+    retrieval: true
+    code_text_similarity: true
+
+  # Classification evaluation
+  classification:
+    test_size: 0.2
+    cv_folds: 5
+    random_state: 42
+    classifiers:
+      - logistic_regression
+      - random_forest
+      - svm
+
+  # Similarity evaluation
+  similarity:
+    sample_size: 1000
+    similarity_threshold: 0.5
+    similarity_metrics:
+      - cosine
+      - euclidean
+      - manhattan
+
+  # Clustering evaluation
+  clustering:
+    n_clusters: [3, 5, 8, 10]
+    sample_size: 2000
+    clustering_algorithms:
+      - kmeans
+      - hierarchical
+
+  # Analogy evaluation
+  analogies:
+    sample_size: 500
+    top_k: 5
+    analogy_types:
+      - semantic
+      - syntactic
+      - domain_specific
+
+  # Information retrieval evaluation
+  retrieval:
+    sample_size: 1000
+    top_k: [1, 5, 10, 20]
+    retrieval_metrics:
+      - precision
+      - recall
+      - f1
+      - map
+      - ndcg
+
+  # Code-text similarity evaluation
+  code_text_similarity:
+    sample_size: 500
+    similarity_threshold: 0.6
+
+# Reporting configuration
+reporting:
+  generate_comprehensive_report: true
+  generate_summary_dashboard: true
+  generate_visualizations: true
+  generate_statistical_analysis: true
+
+  # Report formats
+  formats:
+    - pdf
+    - html
+    - markdown
+
+  # Figure settings
+  figure_format: png
+  figure_dpi: 300
+  figure_size: [12, 8]
+
+  # Report sections
+  include_model_details: true
+  include_training_logs: true
+  include_evaluation_metrics: true
+  include_statistical_analysis: true
+  include_visualizations: true
+  include_recommendations: true
+
+  # Statistical analysis
+  statistical_tests:
+    - t_test
+    - wilcoxon
+    - mann_whitney
+  significance_level: 0.05

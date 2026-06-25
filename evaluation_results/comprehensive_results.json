@@ -1,0 +1,613 @@
+{
+  "metadata": {
+    "evaluation_timestamp": "2025-06-20T23:16:58.431713",
+    "evaluation_version": "1.0.0",
+    "python_version": "3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) \n[Clang 13.0.0 (clang-1300.0.29.30)]",
+    "configuration": {
+      "evaluation_settings": {
+        "alpha": 0.05,
+        "confidence_level": 0.95
+      }
+    },
+    "output_directory": "../evaluation_results",
+    "evaluation_components": {
+      "robust_evaluator": "Comprehensive intrinsic and extrinsic evaluation",
+      "se_benchmarks": "SE-specific benchmark datasets",
+      "statistical_analyzer": "Rigorous statistical analysis",
+      "automated_runner": "One-click evaluation pipeline"
+    }
+  },
+  "evaluation_results": {
+    "intrinsic_evaluation": {
+      "word_similarity": {
+        "word2vec": {
+          "spearman_correlation": -0.04943904062886604,
+          "p_value": 0.8027171476857516,
+          "pairs_evaluated": 28,
+          "coverage": 0.5714285714285714
+        }
+      },
+      "analogies": {
+        "word2vec": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 5,
+          "coverage": 0.25
+        }
+      },
+      "vocabulary_coverage": {
+        "word2vec": {
+          "coverage_ratio": 0.35,
+          "covered_words": 56,
+          "total_words": 160,
+          "missing_words": 104
+        }
+      },
+      "clustering": {
+        "word2vec": {
+          "avg_silhouette": "0.095238075",
+          "n_clusters": 5,
+          "words_clustered": 30,
+          "coverage": 0.5882352941176471
+        }
+      }
+    },
+    "extrinsic_evaluation": {
+      "classification": {
+        "word2vec": {
+          "logistic_regression": {
+            "f1_scores": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mean_f1": 0.0,
+            "std_f1": 0.0
+          },
+          "documents_used": 15,
+          "total_documents": 15
+        }
+      }
+    },
+    "performance_benchmarks": {
+      "word2vec": {
+        "similarity_computation_time_ms": 0.005910396575927734,
+        "vocabulary_size": 1339,
+        "vector_size": 300
+      },
+      "modernbert": {
+        "status": "not_available"
+      }
+    },
+    "model_info": {
+      "word2vec": {
+        "vocabulary_size": 1339,
+        "vector_size": 300,
+        "total_words": 35432,
+        "epochs": 20
+      },
+      "modernbert": {
+        "status": "not_loaded"
+      }
+    }
+  },
+  "statistical_analysis": {
+    "significance_tests": {
+      "word_similarity_correlation": {
+        "normality": {
+          "word2vec_normal": false,
+          "modernbert_normal": false
+        },
+        "equal_variances": "False",
+        "tests": {
+          "wilcoxon": {
+            "statistic": 0.0,
+            "p_value": 1.0,
+            "significant": "False",
+            "interpretation": "No significant difference between models (non-parametric test)"
+          },
+          "mann_whitney": {
+            "statistic": 0.0,
+            "p_value": 1.0,
+            "significant": "False",
+            "interpretation": "No significant difference between independent groups"
+          }
+        }
+      },
+      "analogy_accuracy": {
+        "normality": {
+          "word2vec_normal": false,
+          "modernbert_normal": false
+        },
+        "equal_variances": "False",
+        "tests": {
+          "wilcoxon": {
+            "error": "zero_method 'wilcox' and 'pratt' do not work if x - y is zero for all elements.",
+            "note": "Cannot perform Wilcoxon test (likely identical values)"
+          },
+          "mann_whitney": {
+            "statistic": 0.5,
+            "p_value": 1.0,
+            "significant": "False",
+            "interpretation": "No significant difference between independent groups"
+          }
+        }
+      },
+      "clustering_silhouette": {
+        "normality": {
+          "word2vec_normal": false,
+          "modernbert_normal": false
+        },
+        "equal_variances": "False",
+        "tests": {
+          "wilcoxon": {
+            "statistic": 0.0,
+            "p_value": 1.0,
+            "significant": "False",
+            "interpretation": "No significant difference between models (non-parametric test)"
+          },
+          "mann_whitney": {
+            "statistic": 1.0,
+            "p_value": 1.0,
+            "significant": "False",
+            "interpretation": "No significant difference between independent groups"
+          }
+        }
+      }
+    },
+    "effect_sizes": {
+      "word_similarity_correlation": {
+        "cohens_d": {
+          "value": NaN,
+          "magnitude": "large",
+          "description": "Standardized mean difference"
+        },
+        "glass_delta": {
+          "value": NaN,
+          "description": "Mean difference using control group SD"
+        },
+        "hedges_g": {
+          "value": NaN,
+          "magnitude": "large",
+          "description": "Bias-corrected standardized mean difference"
+        },
+        "cles": {
+          "value": 0.0,
+          "description": "Probability that random score from group 1 > group 2"
+        }
+      },
+      "analogy_accuracy": {
+        "cohens_d": {
+          "value": NaN,
+          "magnitude": "large",
+          "description": "Standardized mean difference"
+        },
+        "glass_delta": {
+          "value": NaN,
+          "description": "Mean difference using control group SD"
+        },
+        "hedges_g": {
+          "value": NaN,
+          "magnitude": "large",
+          "description": "Bias-corrected standardized mean difference"
+        },
+        "cles": {
+          "value": 0.5,
+          "description": "Probability that random score from group 1 > group 2"
+        }
+      },
+      "clustering_silhouette": {
+        "cohens_d": {
+          "value": NaN,
+          "magnitude": "large",
+          "description": "Standardized mean difference"
+        },
+        "glass_delta": {
+          "value": NaN,
+          "description": "Mean difference using control group SD"
+        },
+        "hedges_g": {
+          "value": NaN,
+          "magnitude": "large",
+          "description": "Bias-corrected standardized mean difference"
+        },
+        "cles": {
+          "value": 1.0,
+          "description": "Probability that random score from group 1 > group 2"
+        }
+      }
+    },
+    "correlation_analysis": {
+      "pearson": {
+        "correlation_matrix": {
+          "analogy_accuracy": {
+            "analogy_accuracy": NaN,
+            "clustering_silhouette": NaN,
+            "word_similarity_correlation": NaN
+          },
+          "clustering_silhouette": {
+            "analogy_accuracy": NaN,
+            "clustering_silhouette": 1.0,
+            "word_similarity_correlation": -1.0
+          },
+          "word_similarity_correlation": {
+            "analogy_accuracy": NaN,
+            "clustering_silhouette": -1.0,
+            "word_similarity_correlation": 1.0
+          }
+        },
+        "description": "Linear correlations between metrics"
+      },
+      "spearman": {
+        "correlation_matrix": {
+          "analogy_accuracy": {
+            "analogy_accuracy": NaN,
+            "clustering_silhouette": NaN,
+            "word_similarity_correlation": NaN
+          },
+          "clustering_silhouette": {
+            "analogy_accuracy": NaN,
+            "clustering_silhouette": 1.0,
+            "word_similarity_correlation": -1.0
+          },
+          "word_similarity_correlation": {
+            "analogy_accuracy": NaN,
+            "clustering_silhouette": -1.0,
+            "word_similarity_correlation": 1.0
+          }
+        },
+        "description": "Rank-order correlations between metrics"
+      },
+      "kendall": {
+        "correlation_matrix": {
+          "analogy_accuracy": {
+            "analogy_accuracy": 1.0,
+            "clustering_silhouette": NaN,
+            "word_similarity_correlation": NaN
+          },
+          "clustering_silhouette": {
+            "analogy_accuracy": NaN,
+            "clustering_silhouette": 1.0,
+            "word_similarity_correlation": -1.0
+          },
+          "word_similarity_correlation": {
+            "analogy_accuracy": NaN,
+            "clustering_silhouette": -1.0,
+            "word_similarity_correlation": 1.0
+          }
+        },
+        "description": "Tau correlations between metrics"
+      },
+      "significant_correlations": []
+    },
+    "power_analysis": {
+      "word_similarity_correlation": {
+        "effect_size": NaN,
+        "current_sample_size": 1,
+        "achieved_power": NaN,
+        "required_n_80_power": null,
+        "required_n_90_power": null,
+        "power_adequate": false
+      },
+      "analogy_accuracy": {
+        "effect_size": NaN,
+        "current_sample_size": 1,
+        "achieved_power": NaN,
+        "required_n_80_power": null,
+        "required_n_90_power": null,
+        "power_adequate": false
+      },
+      "clustering_silhouette": {
+        "effect_size": NaN,
+        "current_sample_size": 1,
+        "achieved_power": NaN,
+        "required_n_80_power": null,
+        "required_n_90_power": null,
+        "power_adequate": false
+      }
+    },
+    "descriptive_statistics": {
+      "word_similarity_correlation": {
+        "word2vec": {
+          "count": 1,
+          "mean": -0.04943904062886604,
+          "median": -0.04943904062886604,
+          "std": NaN,
+          "var": NaN,
+          "min": -0.04943904062886604,
+          "max": -0.04943904062886604,
+          "q25": -0.04943904062886604,
+          "q75": -0.04943904062886604,
+          "iqr": 0.0,
+          "skewness": NaN,
+          "kurtosis": NaN,
+          "cv": NaN
+        },
+        "modernbert": {
+          "count": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "std": NaN,
+          "var": NaN,
+          "min": "0",
+          "max": "0",
+          "q25": 0.0,
+          "q75": 0.0,
+          "iqr": 0.0,
+          "skewness": NaN,
+          "kurtosis": NaN,
+          "cv": 0
+        }
+      },
+      "analogy_accuracy": {
+        "word2vec": {
+          "count": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "std": NaN,
+          "var": NaN,
+          "min": 0.0,
+          "max": 0.0,
+          "q25": 0.0,
+          "q75": 0.0,
+          "iqr": 0.0,
+          "skewness": NaN,
+          "kurtosis": NaN,
+          "cv": 0
+        },
+        "modernbert": {
+          "count": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "std": NaN,
+          "var": NaN,
+          "min": "0",
+          "max": "0",
+          "q25": 0.0,
+          "q75": 0.0,
+          "iqr": 0.0,
+          "skewness": NaN,
+          "kurtosis": NaN,
+          "cv": 0
+        }
+      },
+      "clustering_silhouette": {
+        "word2vec": {
+          "count": 1,
+          "mean": "0.095238075",
+          "median": "0.095238075",
+          "std": "nan",
+          "var": "nan",
+          "min": "0.095238075",
+          "max": "0.095238075",
+          "q25": 0.09523807466030121,
+          "q75": 0.09523807466030121,
+          "iqr": 0.0,
+          "skewness": NaN,
+          "kurtosis": NaN,
+          "cv": "nan"
+        },
+        "modernbert": {
+          "count": 1,
+          "mean": 0.0,
+          "median": 0.0,
+          "std": NaN,
+          "var": NaN,
+          "min": "0",
+          "max": "0",
+          "q25": 0.0,
+          "q75": 0.0,
+          "iqr": 0.0,
+          "skewness": NaN,
+          "kurtosis": NaN,
+          "cv": 0
+        }
+      }
+    },
+    "confidence_intervals": {
+      "word_similarity_correlation": {
+        "word2vec": {
+          "bootstrap_ci": [
+            -0.04943904062886604,
+            -0.04943904062886604
+          ],
+          "t_distribution_ci": [
+            -0.04943904062886604,
+            -0.04943904062886604
+          ],
+          "confidence_level": 0.95
+        },
+        "modernbert": {
+          "bootstrap_ci": [
+            0.0,
+            0.0
+          ],
+          "t_distribution_ci": [
+            0.0,
+            0.0
+          ],
+          "confidence_level": 0.95
+        }
+      },
+      "analogy_accuracy": {
+        "word2vec": {
+          "bootstrap_ci": [
+            0.0,
+            0.0
+          ],
+          "t_distribution_ci": [
+            0.0,
+            0.0
+          ],
+          "confidence_level": 0.95
+        },
+        "modernbert": {
+          "bootstrap_ci": [
+            0.0,
+            0.0
+          ],
+          "t_distribution_ci": [
+            0.0,
+            0.0
+          ],
+          "confidence_level": 0.95
+        }
+      },
+      "clustering_silhouette": {
+        "word2vec": {
+          "bootstrap_ci": [
+            0.09523807466030121,
+            0.09523807466030121
+          ],
+          "t_distribution_ci": [
+            "0.095238075",
+            "0.095238075"
+          ],
+          "confidence_level": 0.95
+        },
+        "modernbert": {
+          "bootstrap_ci": [
+            0.0,
+            0.0
+          ],
+          "t_distribution_ci": [
+            0.0,
+            0.0
+          ],
+          "confidence_level": 0.95
+        }
+      }
+    },
+    "multiple_comparisons": {
+      "original_p_values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_names": [
+        "word_similarity_correlation_wilcoxon",
+        "word_similarity_correlation_mann_whitney",
+        "analogy_accuracy_mann_whitney",
+        "clustering_silhouette_wilcoxon",
+        "clustering_silhouette_mann_whitney"
+      ],
+      "bonferroni": {
+        "corrected_p_values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rejected": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "num_significant": "0"
+      },
+      "fdr_bh": {
+        "corrected_p_values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rejected": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "num_significant": "0"
+      },
+      "holm": {
+        "corrected_p_values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rejected": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "num_significant": "0"
+      }
+    }
+  },
+  "benchmark_info": {
+    "word_pairs": {
+      "type": "list",
+      "size": 49,
+      "description": "List of 49 items"
+    },
+    "analogies": {
+      "type": "list",
+      "size": 20,
+      "description": "List of 20 items"
+    },
+    "se_vocabulary": {
+      "type": "list",
+      "size": 160,
+      "description": "List of 160 items"
+    },
+    "classification_data": {
+      "type": "dict",
+      "keys": [
+        "texts",
+        "labels",
+        "num_classes",
+        "description"
+      ],
+      "description": "Dictionary with 4 keys"
+    },
+    "clustering_words": {
+      "type": "list",
+      "size": 51,
+      "description": "List of 51 items"
+    },
+    "retrieval_data": {
+      "type": "dict",
+      "keys": [
+        "documents",
+        "queries",
+        "description"
+      ],
+      "description": "Dictionary with 3 keys"
+    },
+    "similarity_data": {
+      "type": "dict",
+      "keys": [
+        "text_pairs",
+        "description"
+      ],
+      "description": "Dictionary with 2 keys"
+    },
+    "speed_test_words": {
+      "type": "list",
+      "size": 15,
+      "description": "List of 15 items"
+    },
+    "scalability_texts": {
+      "type": "list",
+      "size": 10,
+      "description": "List of 10 items"
+    }
+  },
+  "execution_info": {
+    "start_time": 1750475814.9247239,
+    "end_time": 1750475818.431733,
+    "duration_seconds": 3.5070090293884277
+  }
+}
