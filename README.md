@@ -98,6 +98,7 @@ SE_WE/
 │   │   └── modernbert_model.py     # ModernBERT Transformer setup
 │   ├── evaluate_fasttext_glove.py  # Static baseline evaluation loop
 │   └── main.py                     # Primary project orchestration runner
+|   └── train_save_fasttext         # Most Similar words for fastText and GloVe
 ├── venv/                           # Isolated local Python environment (Ignored)
 ├── .gitignore                      # Git exclusion filters (weights, venv, etc.)
 └── README.md                       # Documentation
