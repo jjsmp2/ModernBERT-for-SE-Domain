@@ -76,8 +76,8 @@ This project supports two main configurations: a quick test run and a full-scale
 ```text
 SE_WE/
 ├── config/                         # Configuration files for execution
-│   ├── test.yaml                   # Fast pipeline verification run
-│   └── fullscale.yaml              # Complete 18-minute evaluation run
+│   ├── test.yaml                   # Fast pipeline verification run (test file)
+│   └── fullscale.yaml              # Complete run file
 ├── results/                        # All pipeline-generated outputs
 │   ├── data/
 │   │   ├── raw/                    # Collected raw domain data
@@ -87,9 +87,9 @@ SE_WE/
 │   │   └── word2vec/               # Saved Word2Vec embedding weights
 │   ├── evaluations/                # Raw metric outputs & tracking logs
 │   │   ├── baseline_comparison.json # Baseline evaluations (GloVe, FastText)
-│   │   └── comprehensive_evaluation.json # Deep evaluation metrics
-│   ├── reports/                    # Academic texts & formatting scripts
-│   │   └── evaluation_summary.txt  # Quick-read terminal text summary
+│   │   └── comprehensive_evaluation.json # Evaluation metrics
+│   ├── reports/                    # Texts
+│   │   └── evaluation_summary.txt  # Terminal text summary
 │   └── logs/                       # System execution trace files
 │       └── se_embeddings.log       # Debugging and run tracking data
 ├── src/                            # Source code repository files
@@ -100,7 +100,7 @@ SE_WE/
 │   └── main.py                     # Primary project orchestration runner
 ├── venv/                           # Isolated local Python environment (Ignored)
 ├── .gitignore                      # Git exclusion filters (weights, venv, etc.)
-└── README.md                       # Documentation overview
+└── README.md                       # Documentation
 
 
 *Note: ModernBERT results are based on successful implementation and evaluation within the project, reflecting the comparative analysis.* 
