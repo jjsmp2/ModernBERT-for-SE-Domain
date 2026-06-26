@@ -12,22 +12,22 @@ Anonymous
 
 - **Automated Data Collection:** Gathers authentic SE documents from Wikipedia, GitHub, Stack Overflow, and ArXiv.
 - **Rigorous Preprocessing Pipeline:** Ensures high-quality data through filtering, cleaning, and domain-specific tokenization.
-- **Word2Vec Implementation:** Baseline model training and evaluation for SE contexts.
-- **ModernBERT Implementation:** Transformer-based model training and comparative analysis (including expected performance and challenges).
+- **Static Word Embedding Model Implementation for SE domain:** Baseline models training and evaluation for SE contexts.
+- **ModernBERT Implementation for SE domain:** Transformer-based model training and comparative analysis (including expected performance and challenges).
 - **Comprehensive Evaluation Framework:** Intrinsic (word similarity, analogies, vocabulary coverage) and extrinsic (classification, clustering) metrics.
 - **Computational Analysis:** Benchmarking of training time, memory usage, and inference speed for both models.
 - **Reproducible Methodology:** Detailed configurations and setup for replication of experiments.
 
 ## Research Questions Addressed
 
-1.  How does ModernBERT implementation compare to Word2Vec for SE-specific tasks?
-2.  What are the computational and performance trade-offs between approaches?
-3.  What implementation challenges arise when adapting transformer models for SE domains?
-4.  How can we optimize the data preprocessing pipeline to improve model performance?
+1.  How effectively do transformer-based embeddings (e.g., ModernBERT) capture context-dependent meanings in SE terminology compared to static embeddings such as Word2Vec, fastText, and GloVe??
+2.  What are the computational and performance trade-offs between transformer-based embeddings (ModernBERT) and static embeddings, when applied to SE tasks?
+3.  What implementation challenges arise when adapting transformer models to SE domains, and how can they be mitigated through structured methodologies?
+4.  How do different word embedding approaches perform across SE tasks such as requirements analysis, documentation processing, and technical terminology representation?
 
 ## Quick Start
 
-Follow these steps to set up and run the project locally.
+Follow these steps to set up and run the repo locally.
 
 ### Prerequisites
 
