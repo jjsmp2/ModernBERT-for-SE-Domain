@@ -1,163 +1,100 @@
 {
   "vocabulary_coverage": {
-    "total_words": 6855,
-    "covered_words": 5267,
-    "coverage_ratio": 0.7683442742523705,
-    "vocabulary_size": 1339
+    "total_words": 426,
+    "covered_words": 170,
+    "coverage_ratio": 0.39906103286384975,
+    "vocabulary_size": 438
   },
   "similarity_examples": {
     "software": [
       [
-        "needs",
-        0.5885987877845764
+        "scalable",
+        0.3683961033821106
       ],
       [
-        "group",
-        0.5706339478492737
+        "your",
+        0.3512853980064392
       ],
       [
-        "continuously",
-        0.5696666240692139
+        "maintain",
+        0.3432326912879944
       ],
       [
-        "company",
-        0.5648529529571533
+        "these",
+        0.3385217785835266
       ],
       [
-        "analyzing",
-        0.555481493473053
+        "accessed",
+        0.3321019113063812
       ]
     ],
     "programming": [
       [
-        "oop",
-        0.6283733248710632
+        "hacktoberfest",
+        0.5305330157279968
       ],
       [
-        "languages",
-        0.6117799282073975
+        "source",
+        0.4133061170578003
       ],
       [
-        "contain",
-        0.6086457967758179
+        "object",
+        0.3399033844470978
       ],
       [
-        "concept",
-        0.5622709393501282
+        "off",
+        0.3213265538215637
       ],
       [
-        "closely",
-        0.5575854778289795
+        "then",
+        0.31805986166000366
       ]
     ],
-    "algorithm": [
-      [
-        "polynomial",
-        0.7233729362487793
-      ],
-      [
-        "optimal",
-        0.6031888723373413
-      ],
-      [
-        "sorting",
-        0.6012129783630371
-      ],
-      [
-        "matrix",
-        0.5828444957733154
-      ],
-      [
-        "needed",
-        0.5688068270683289
-      ]
-    ],
-    "code": [
-      [
-        "generated",
-        0.5311804413795471
-      ],
-      [
-        "automatically",
-        0.5195883512496948
-      ],
-      [
-        "calling",
-        0.5109928846359253
-      ],
-      [
-        "metaprogramming",
-        0.49994102120399475
-      ],
-      [
-        "verilog",
-        0.4942428767681122
-      ]
-    ],
-    "function": [
-      [
-        "foo",
-        0.7548946738243103
-      ],
-      [
-        "arguments",
-        0.7282881140708923
-      ],
-      [
-        "myjsfunc",
-        0.6987949013710022
-      ],
-      [
-        "undefined",
-        0.6981034278869629
-      ],
-      [
-        "call",
-        0.6822465658187866
-      ]
-    ],
+    "algorithm": "Word not in vocabulary",
+    "code": "Word not in vocabulary",
+    "function": "Word not in vocabulary",
     "data": [
       [
-        "linked",
-        0.544855535030365
+        "allows",
+        0.4265930652618408
       ],
       [
-        "pipelines",
-        0.5326718688011169
+        "may",
+        0.39681753516197205
       ],
       [
-        "structure",
-        0.5199294090270996
+        "was",
+        0.31454288959503174
       ],
       [
-        "semi",
-        0.5132054090499878
+        "electrical",
+        0.31371647119522095
       ],
       [
-        "insight",
-        0.5124754309654236
+        "application",
+        0.3132084310054779
       ]
     ],
     "system": [
       [
-        "permission",
-        0.542285680770874
+        "architectures",
+        0.5169605016708374
       ],
       [
-        "concurrent",
-        0.5298720002174377
+        "executed",
+        0.4033123254776001
       ],
       [
-        "token",
-        0.5170660614967346
+        "learning",
+        0.37543612718582153
       ],
       [
-        "component",
-        0.4932979345321655
+        "based",
+        0.36020252108573914
       ],
       [
-        "chemical",
-        0.4923608899116516
+        "forks",
+        0.35801461338996887
       ]
     ]
   },
@@ -165,183 +102,53 @@
     "programming_languages": {
       "python": [
         [
-          "bert",
-          0.6036961674690247
+          "complex",
+          0.44683557748794556
         ],
         [
-          "ner",
-          0.5928478837013245
+          "sdlc",
+          0.4042264521121979
         ],
         [
-          "pipeline",
-          0.5865669250488281
+          "consideration",
+          0.3516708314418793
         ]
       ],
-      "java": [
-        [
-          "jvm",
-          0.7106078267097473
-        ],
-        [
-          "jsp",
-          0.6451564431190491
-        ],
-        [
-          "jdk",
-          0.639232337474823
-        ]
-      ],
-      "javascript": [
-        [
-          "myjsfunc",
-          0.7265806198120117
-        ],
-        [
-          "chrome",
-          0.6999284029006958
-        ],
-        [
-          "debugger",
-          0.6587346792221069
-        ]
-      ],
-      "cpp": [
-        [
-          "clojure",
-          0.932792603969574
-        ],
-        [
-          "gesture",
-          0.8818135857582092
-        ],
-        [
-          "recognition",
-          0.8792049288749695
-        ]
-      ]
+      "java": "Not in vocabulary",
+      "javascript": "Not in vocabulary",
+      "cpp": "Not in vocabulary"
     },
     "concepts": {
-      "algorithm": [
-        [
-          "polynomial",
-          0.7233729362487793
-        ],
-        [
-          "optimal",
-          0.6031888723373413
-        ],
-        [
-          "sorting",
-          0.6012129783630371
-        ]
-      ],
-      "function": [
-        [
-          "foo",
-          0.7548946738243103
-        ],
-        [
-          "arguments",
-          0.7282881140708923
-        ],
-        [
-          "myjsfunc",
-          0.6987949013710022
-        ]
-      ],
-      "class": [
-        [
-          "super",
-          0.7213793992996216
-        ],
-        [
-          "base",
-          0.6947516202926636
-        ],
-        [
-          "inheritance",
-          0.6638559699058533
-        ]
-      ],
+      "algorithm": "Not in vocabulary",
+      "function": "Not in vocabulary",
+      "class": "Not in vocabulary",
       "method": [
         [
-          "dto",
-          0.5284824371337891
+          "previously",
+          0.4468235671520233
         ],
         [
-          "custom",
-          0.5223156213760376
+          "blueprints",
+          0.3577699363231659
         ],
         [
-          "alternative",
-          0.5176335573196411
+          "deutsch",
+          0.3577410876750946
         ]
       ]
     },
     "tools": {
-      "git": [
-        [
-          "jujutsu",
-          0.7097959518432617
-        ],
-        [
-          "shell",
-          0.6669217944145203
-        ],
-        [
-          "pip",
-          0.6402410268783569
-        ]
-      ],
-      "docker": [
-        [
-          "elixir",
-          0.7403866052627563
-        ],
-        [
-          "backup",
-          0.6956376433372498
-        ],
-        [
-          "port",
-          0.693248450756073
-        ]
-      ],
-      "database": [
-        [
-          "schema",
-          0.6232807636260986
-        ],
-        [
-          "dbms",
-          0.6020327210426331
-        ],
-        [
-          "relational",
-          0.588797390460968
-        ]
-      ],
-      "framework": [
-        [
-          "workflow",
-          0.4913291931152344
-        ],
-        [
-          "decision",
-          0.4872047007083893
-        ],
-        [
-          "fair",
-          0.47820955514907837
-        ]
-      ]
+      "git": "Not in vocabulary",
+      "docker": "Not in vocabulary",
+      "database": "Not in vocabulary",
+      "framework": "Not in vocabulary"
     }
   },
   "classification": {
-    "train_accuracy": 0.9330024813895782,
-    "test_accuracy": 0.8390804597701149,
+    "train_accuracy": 0.631578947368421,
+    "test_accuracy": 0.42857142857142855,
     "num_classes": 5,
-    "train_samples": 403,
-    "test_samples": 87
+    "train_samples": 19,
+    "test_samples": 7
   }
 }

@@ -1,86 +1,47 @@
 {
   "word2vec_evaluation": {
-    "vocabulary_size": 1339,
-    "vector_dimensions": 300,
+    "vocabulary_size": 438,
+    "vector_dimensions": 50,
     "similarity_examples": {
       "software": [
         [
-          "needs",
-          0.5885987877845764
+          "scalable",
+          0.3683961033821106
         ],
         [
-          "group",
-          0.5706339478492737
+          "your",
+          0.3512853980064392
         ],
         [
-          "continuously",
-          0.5696666240692139
+          "maintain",
+          0.3432326912879944
         ]
       ],
       "programming": [
         [
-          "oop",
-          0.6283733248710632
+          "hacktoberfest",
+          0.5305330157279968
         ],
         [
-          "languages",
-          0.6117799282073975
+          "source",
+          0.4133061170578003
         ],
         [
-          "contain",
-          0.6086457967758179
+          "object",
+          0.3399033844470978
         ]
       ],
-      "algorithm": [
-        [
-          "polynomial",
-          0.7233729362487793
-        ],
-        [
-          "optimal",
-          0.6031888723373413
-        ],
-        [
-          "sorting",
-          0.6012129783630371
-        ]
-      ],
-      "code": [
-        [
-          "generated",
-          0.5311804413795471
-        ],
-        [
-          "automatically",
-          0.5195883512496948
-        ],
-        [
-          "calling",
-          0.5109928846359253
-        ]
-      ],
-      "function": [
-        [
-          "foo",
-          0.7548946738243103
-        ],
-        [
-          "arguments",
-          0.7282881140708923
-        ],
-        [
-          "myjsfunc",
-          0.6987949013710022
-        ]
-      ]
+      "algorithm": "Not in vocabulary",
+      "code": "Not in vocabulary",
+      "function": "Not in vocabulary"
     },
     "status": "completed"
   },
   "modernbert_evaluation": {
     "model_name": "answerdotai/ModernBERT-base",
     "status": "completed",
-    "max_length": 512,
-    "batch_size": 8,
+    "max_length": 128,
+    "batch_size": 2,
     "num_labels": 5,
     "label_mapping": {
       "arxiv": 0,
@@ -91,17 +52,17 @@
     }
   },
   "comparison": {
-    "word2vec_vocab_size": 1339,
-    "word2vec_dimensions": 300,
+    "word2vec_vocab_size": 438,
+    "word2vec_dimensions": 50,
     "modernbert_model": "answerdotai/ModernBERT-base",
-    "modernbert_max_length": 512,
+    "modernbert_max_length": 128,
     "comparison_summary": "Word2Vec provides traditional word embeddings while ModernBERT offers contextual embeddings"
   },
   "summary": {
     "total_evaluations": 2,
     "word2vec_status": "completed",
     "modernbert_status": "completed",
-    "evaluation_timestamp": 1750404550.293878,
+    "evaluation_timestamp": 1782485200.4424481,
     "recommendations": [
       "Word2Vec provides fast training and good baseline performance",
       "ModernBERT offers state-of-the-art contextual understanding",

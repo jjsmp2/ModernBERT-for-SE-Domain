@@ -11,31 +11,31 @@
     "recommendation": "Word2Vec for fast baseline, ModernBERT for advanced analysis"
   },
   "data_collection_summary": {
-    "total_documents": 2451,
+    "total_documents": 35,
     "sources": {
-      "wikipedia": 300,
-      "github": 562,
-      "stackoverflow": 1089,
-      "arxiv": 500
+      "wikipedia": 5,
+      "github": 3,
+      "stackoverflow": 5,
+      "arxiv": 2
     },
-    "collection_time": 2197.6736958026886,
+    "collection_time": 67.82850122451782,
     "quality": "Real data from multiple SE sources"
   },
   "preprocessing_summary": {
-    "total_documents": 2471,
-    "processed_documents": 576,
-    "filtered_out": 1895,
-    "train_split": 403,
-    "val_split": 86,
-    "test_split": 87,
-    "processing_time": 0.2736361026763916
+    "total_documents": 35,
+    "processed_documents": 33,
+    "filtered_out": 2,
+    "train_split": 19,
+    "val_split": 7,
+    "test_split": 7,
+    "processing_time": 0.08684444427490234
   },
   "word2vec_analysis": {
     "model_type": "Word2Vec (CBOW)",
-    "vocabulary_size": 1339,
-    "vector_dimensions": 300,
-    "training_time": 2.8189809322357178,
-    "epochs": 20,
+    "vocabulary_size": 438,
+    "vector_dimensions": 50,
+    "training_time": 0.12202572822570801,
+    "epochs": 3,
     "evaluation_status": "unknown",
     "strengths": [
       "Fast training and inference",
@@ -46,7 +46,7 @@
   "modernbert_analysis": {
     "model_type": "ModernBERT (Transformer)",
     "training_status": "mock_completed",
-    "training_time": 1.0725960731506348,
+    "training_time": 6.592001914978027,
     "evaluation_status": "mock_evaluation",
     "strengths": [
       "Contextual understanding",
@@ -105,5 +105,5 @@
     "evaluation_framework": "Multi-task SE text analysis evaluation",
     "infrastructure": "CPU-based training and inference"
   },
-  "timestamp": 1750404550.2944372
+  "timestamp": 1782485200.4446385
 }

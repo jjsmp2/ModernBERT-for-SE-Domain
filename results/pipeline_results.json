@@ -1,273 +1,197 @@
 {
   "data_collection": {
     "wikipedia": {
-      "collected": 300,
+      "collected": 5,
       "status": "completed",
-      "output_file": "results/data/raw/wikipedia_articles.json",
+      "output_file": "results\\data\\raw\\wikipedia_articles.json",
       "search_terms": [
         "software engineering",
         "computer programming",
-        "algorithm",
-        "data structure",
-        "database",
-        "web development",
+        "software development",
+        "programming language",
+        "software architecture",
+        "software testing",
+        "agile development",
         "machine learning",
         "artificial intelligence",
-        "software architecture",
-        "programming language",
-        "software testing",
-        "version control",
-        "DevOps",
-        "agile software development",
-        "object-oriented programming"
+        "data structures",
+        "algorithms",
+        "software design patterns"
       ]
     },
     "github": {
-      "collected": 562,
+      "collected": 3,
       "status": "completed",
-      "output_file": "results/data/raw/github_repos.json",
+      "output_file": "results\\data\\raw\\github_repos.json",
       "languages": [
         "Python",
         "JavaScript",
         "Java",
-        "TypeScript",
-        "Go",
         "C++",
-        "C#",
-        "Rust"
+        "Go"
       ]
     },
     "stackoverflow": {
-      "collected": 1089,
+      "collected": 5,
       "status": "completed",
-      "output_file": "results/data/raw/stackoverflow_posts.json",
+      "output_file": "results\\data\\raw\\stackoverflow_posts.json",
       "tags": [
         "python",
         "javascript",
         "java",
         "algorithm",
-        "data-structures",
-        "machine-learning",
-        "web-development",
-        "database",
-        "software-engineering",
-        "programming",
-        "coding",
-        "software-design",
-        "architecture",
-        "performance",
-        "debugging"
+        "data-structures"
       ]
     },
     "arxiv": {
-      "collected": 500,
+      "collected": 2,
       "status": "completed",
-      "output_file": "results/data/raw/arxiv_papers.json",
+      "output_file": "results\\data\\raw\\arxiv_papers.json",
       "categories": [
         "cs.SE",
         "cs.LG",
-        "cs.AI",
-        "cs.DB",
-        "cs.PL"
+        "cs.AI"
       ]
     },
-    "total_collected": 2451,
-    "collection_time": 2197.6736958026886
+    "total_collected": 35,
+    "collection_time": 67.82850122451782,
+    "fallback_samples": {
+      "collected": 20,
+      "status": "completed",
+      "output_file": "results\\data\\raw\\sample_data.json"
+    }
   },
   "preprocessing": {
     "status": "completed",
-    "processing_time": 0.2736361026763916,
+    "processing_time": 0.08684444427490234,
     "statistics": {
-      "total_documents": 2471,
-      "processed_documents": 576,
-      "filtered_out": 1895,
-      "train_documents": 403,
-      "val_documents": 86,
-      "test_documents": 87
+      "total_documents": 35,
+      "processed_documents": 33,
+      "filtered_out": 2,
+      "train_documents": 19,
+      "val_documents": 7,
+      "test_documents": 7
     },
     "output_files": {
-      "train": "results/data/processed/train.json",
-      "val": "results/data/processed/val.json",
-      "test": "results/data/processed/test.json",
-      "metadata": "results/data/processed/metadata.json"
+      "train": "results\\data\\processed\\train.json",
+      "val": "results\\data\\processed\\val.json",
+      "test": "results\\data\\processed\\test.json",
+      "metadata": "results\\data\\processed\\metadata.json"
     }
   },
   "word2vec_training": {
     "training": {
-      "training_time": 2.8189809322357178,
-      "vocabulary_size": 1339,
-      "vector_size": 300,
-      "total_sentences": 403,
-      "epochs": 20,
+      "training_time": 0.12202572822570801,
+      "vocabulary_size": 438,
+      "vector_size": 50,
+      "total_sentences": 19,
+      "epochs": 3,
       "model_parameters": {
-        "vector_size": 300,
-        "window": 10,
-        "min_count": 5,
-        "sg": 1,
+        "vector_size": 50,
+        "window": 3,
+        "min_count": 1,
+        "sg": 0,
         "hs": 0,
-        "negative": 10
+        "negative": 5
       }
     },
     "evaluation": {
       "vocabulary_coverage": {
-        "total_words": 6855,
-        "covered_words": 5267,
-        "coverage_ratio": 0.7683442742523705,
-        "vocabulary_size": 1339
+        "total_words": 426,
+        "covered_words": 170,
+        "coverage_ratio": 0.39906103286384975,
+        "vocabulary_size": 438
       },
       "similarity_examples": {
         "software": [
           [
-            "needs",
-            0.5885987877845764
+            "scalable",
+            0.3683961033821106
           ],
           [
-            "group",
-            0.5706339478492737
+            "your",
+            0.3512853980064392
           ],
           [
-            "continuously",
-            0.5696666240692139
+            "maintain",
+            0.3432326912879944
           ],
           [
-            "company",
-            0.5648529529571533
+            "these",
+            0.3385217785835266
           ],
           [
-            "analyzing",
-            0.555481493473053
+            "accessed",
+            0.3321019113063812
           ]
         ],
         "programming": [
           [
-            "oop",
-            0.6283733248710632
+            "hacktoberfest",
+            0.5305330157279968
           ],
           [
-            "languages",
-            0.6117799282073975
+            "source",
+            0.4133061170578003
           ],
           [
-            "contain",
-            0.6086457967758179
+            "object",
+            0.3399033844470978
           ],
           [
-            "concept",
-            0.5622709393501282
+            "off",
+            0.3213265538215637
           ],
           [
-            "closely",
-            0.5575854778289795
+            "then",
+            0.31805986166000366
           ]
         ],
-        "algorithm": [
-          [
-            "polynomial",
-            0.7233729362487793
-          ],
-          [
-            "optimal",
-            0.6031888723373413
-          ],
-          [
-            "sorting",
-            0.6012129783630371
-          ],
-          [
-            "matrix",
-            0.5828444957733154
-          ],
-          [
-            "needed",
-            0.5688068270683289
-          ]
-        ],
-        "code": [
-          [
-            "generated",
-            0.5311804413795471
-          ],
-          [
-            "automatically",
-            0.5195883512496948
-          ],
-          [
-            "calling",
-            0.5109928846359253
-          ],
-          [
-            "metaprogramming",
-            0.49994102120399475
-          ],
-          [
-            "verilog",
-            0.4942428767681122
-          ]
-        ],
-        "function": [
-          [
-            "foo",
-            0.7548946738243103
-          ],
-          [
-            "arguments",
-            0.7282881140708923
-          ],
-          [
-            "myjsfunc",
-            0.6987949013710022
-          ],
-          [
-            "undefined",
-            0.6981034278869629
-          ],
-          [
-            "call",
-            0.6822465658187866
-          ]
-        ],
+        "algorithm": "Word not in vocabulary",
+        "code": "Word not in vocabulary",
+        "function": "Word not in vocabulary",
         "data": [
           [
-            "linked",
-            0.544855535030365
+            "allows",
+            0.4265930652618408
           ],
           [
-            "pipelines",
-            0.5326718688011169
+            "may",
+            0.39681753516197205
           ],
           [
-            "structure",
-            0.5199294090270996
+            "was",
+            0.31454288959503174
           ],
           [
-            "semi",
-            0.5132054090499878
+            "electrical",
+            0.31371647119522095
           ],
           [
-            "insight",
-            0.5124754309654236
+            "application",
+            0.3132084310054779
           ]
         ],
         "system": [
           [
-            "permission",
-            0.542285680770874
+            "architectures",
+            0.5169605016708374
           ],
           [
-            "concurrent",
-            0.5298720002174377
+            "executed",
+            0.4033123254776001
           ],
           [
-            "token",
-            0.5170660614967346
+            "learning",
+            0.37543612718582153
           ],
           [
-            "component",
-            0.4932979345321655
+            "based",
+            0.36020252108573914
           ],
           [
-            "chemical",
-            0.4923608899116516
+            "forks",
+            0.35801461338996887
           ]
         ]
       },
@@ -275,291 +199,122 @@
         "programming_languages": {
           "python": [
             [
-              "bert",
-              0.6036961674690247
+              "complex",
+              0.44683557748794556
             ],
             [
-              "ner",
-              0.5928478837013245
+              "sdlc",
+              0.4042264521121979
             ],
             [
-              "pipeline",
-              0.5865669250488281
+              "consideration",
+              0.3516708314418793
             ]
           ],
-          "java": [
-            [
-              "jvm",
-              0.7106078267097473
-            ],
-            [
-              "jsp",
-              0.6451564431190491
-            ],
-            [
-              "jdk",
-              0.639232337474823
-            ]
-          ],
-          "javascript": [
-            [
-              "myjsfunc",
-              0.7265806198120117
-            ],
-            [
-              "chrome",
-              0.6999284029006958
-            ],
-            [
-              "debugger",
-              0.6587346792221069
-            ]
-          ],
-          "cpp": [
-            [
-              "clojure",
-              0.932792603969574
-            ],
-            [
-              "gesture",
-              0.8818135857582092
-            ],
-            [
-              "recognition",
-              0.8792049288749695
-            ]
-          ]
+          "java": "Not in vocabulary",
+          "javascript": "Not in vocabulary",
+          "cpp": "Not in vocabulary"
         },
         "concepts": {
-          "algorithm": [
-            [
-              "polynomial",
-              0.7233729362487793
-            ],
-            [
-              "optimal",
-              0.6031888723373413
-            ],
-            [
-              "sorting",
-              0.6012129783630371
-            ]
-          ],
-          "function": [
-            [
-              "foo",
-              0.7548946738243103
-            ],
-            [
-              "arguments",
-              0.7282881140708923
-            ],
-            [
-              "myjsfunc",
-              0.6987949013710022
-            ]
-          ],
-          "class": [
-            [
-              "super",
-              0.7213793992996216
-            ],
-            [
-              "base",
-              0.6947516202926636
-            ],
-            [
-              "inheritance",
-              0.6638559699058533
-            ]
-          ],
+          "algorithm": "Not in vocabulary",
+          "function": "Not in vocabulary",
+          "class": "Not in vocabulary",
           "method": [
             [
-              "dto",
-              0.5284824371337891
+              "previously",
+              0.4468235671520233
             ],
             [
-              "custom",
-              0.5223156213760376
+              "blueprints",
+              0.3577699363231659
             ],
             [
-              "alternative",
-              0.5176335573196411
+              "deutsch",
+              0.3577410876750946
             ]
           ]
         },
         "tools": {
-          "git": [
-            [
-              "jujutsu",
-              0.7097959518432617
-            ],
-            [
-              "shell",
-              0.6669217944145203
-            ],
-            [
-              "pip",
-              0.6402410268783569
-            ]
-          ],
-          "docker": [
-            [
-              "elixir",
-              0.7403866052627563
-            ],
-            [
-              "backup",
-              0.6956376433372498
-            ],
-            [
-              "port",
-              0.693248450756073
-            ]
-          ],
-          "database": [
-            [
-              "schema",
-              0.6232807636260986
-            ],
-            [
-              "dbms",
-              0.6020327210426331
-            ],
-            [
-              "relational",
-              0.588797390460968
-            ]
-          ],
-          "framework": [
-            [
-              "workflow",
-              0.4913291931152344
-            ],
-            [
-              "decision",
-              0.4872047007083893
-            ],
-            [
-              "fair",
-              0.47820955514907837
-            ]
-          ]
+          "git": "Not in vocabulary",
+          "docker": "Not in vocabulary",
+          "database": "Not in vocabulary",
+          "framework": "Not in vocabulary"
         }
       },
       "classification": {
-        "train_accuracy": 0.9330024813895782,
-        "test_accuracy": 0.8390804597701149,
+        "train_accuracy": 0.631578947368421,
+        "test_accuracy": 0.42857142857142855,
         "num_classes": 5,
-        "train_samples": 403,
-        "test_samples": 87
+        "train_samples": 19,
+        "test_samples": 7
       }
     },
-    "model_path": "results/models/word2vec_model.bin",
+    "model_path": "results\\models\\word2vec_model.bin",
     "status": "completed"
   },
   "modernbert_training": {
     "training": {
-      "training_time": 1.0725960731506348,
-      "train_samples": 403,
-      "val_samples": 86,
-      "epochs": 5,
+      "training_time": 6.592001914978027,
+      "train_samples": 19,
+      "val_samples": 7,
+      "epochs": 1,
       "status": "mock_completed",
-      "error": "list index out of range"
+      "error": "Columns ['attention_mask', 'input_ids'] not in the dataset. Current columns in the dataset: ['labels']"
     },
     "evaluation": {
-      "test_samples": 87,
+      "test_samples": 7,
       "accuracy": 0.75,
       "f1_score": 0.72,
       "status": "mock_evaluation",
       "note": "Training incomplete, using mock results"
     },
-    "model_path": "results/models/modernbert_model",
+    "model_path": "results\\models\\modernbert_model",
     "status": "completed"
   },
   "evaluation": {
     "word2vec_evaluation": {
-      "vocabulary_size": 1339,
-      "vector_dimensions": 300,
+      "vocabulary_size": 438,
+      "vector_dimensions": 50,
       "similarity_examples": {
         "software": [
           [
-            "needs",
-            0.5885987877845764
+            "scalable",
+            0.3683961033821106
           ],
           [
-            "group",
-            0.5706339478492737
+            "your",
+            0.3512853980064392
           ],
           [
-            "continuously",
-            0.5696666240692139
+            "maintain",
+            0.3432326912879944
           ]
         ],
         "programming": [
           [
-            "oop",
-            0.6283733248710632
+            "hacktoberfest",
+            0.5305330157279968
           ],
           [
-            "languages",
-            0.6117799282073975
+            "source",
+            0.4133061170578003
           ],
           [
-            "contain",
-            0.6086457967758179
+            "object",
+            0.3399033844470978
           ]
         ],
-        "algorithm": [
-          [
-            "polynomial",
-            0.7233729362487793
-          ],
-          [
-            "optimal",
-            0.6031888723373413
-          ],
-          [
-            "sorting",
-            0.6012129783630371
-          ]
-        ],
-        "code": [
-          [
-            "generated",
-            0.5311804413795471
-          ],
-          [
-            "automatically",
-            0.5195883512496948
-          ],
-          [
-            "calling",
-            0.5109928846359253
-          ]
-        ],
-        "function": [
-          [
-            "foo",
-            0.7548946738243103
-          ],
-          [
-            "arguments",
-            0.7282881140708923
-          ],
-          [
-            "myjsfunc",
-            0.6987949013710022
-          ]
-        ]
+        "algorithm": "Not in vocabulary",
+        "code": "Not in vocabulary",
+        "function": "Not in vocabulary"
       },
       "status": "completed"
     },
     "modernbert_evaluation": {
       "model_name": "answerdotai/ModernBERT-base",
       "status": "completed",
-      "max_length": 512,
-      "batch_size": 8,
+      "max_length": 128,
+      "batch_size": 2,
       "num_labels": 5,
       "label_mapping": {
         "arxiv": 0,
@@ -570,17 +325,17 @@
       }
     },
     "comparison": {
-      "word2vec_vocab_size": 1339,
-      "word2vec_dimensions": 300,
+      "word2vec_vocab_size": 438,
+      "word2vec_dimensions": 50,
       "modernbert_model": "answerdotai/ModernBERT-base",
-      "modernbert_max_length": 512,
+      "modernbert_max_length": 128,
       "comparison_summary": "Word2Vec provides traditional word embeddings while ModernBERT offers contextual embeddings"
     },
     "summary": {
       "total_evaluations": 2,
       "word2vec_status": "completed",
       "modernbert_status": "completed",
-      "evaluation_timestamp": 1750404550.293878,
+      "evaluation_timestamp": 1782485200.4424481,
       "recommendations": [
         "Word2Vec provides fast training and good baseline performance",
         "ModernBERT offers state-of-the-art contextual understanding",
@@ -591,20 +346,20 @@
   "reporting": {
     "status": "completed",
     "report_files": {
-      "comprehensive_json": "results/reports/comprehensive_report.json",
-      "markdown_report": "results/reports/SE_Word_Embeddings_Report.md",
-      "figures_directory": "results/figures"
+      "comprehensive_json": "results\\reports\\comprehensive_report.json",
+      "markdown_report": "results\\reports\\SE_Word_Embeddings_Report.md",
+      "figures_directory": "results\\figures"
     },
-    "generation_time": 1750404550.746203
+    "generation_time": 1782485201.7622583
   },
   "timing": {
-    "data_collection": 2197.6738409996033,
-    "preprocessing": 0.27507901191711426,
-    "word2vec_training": 3.010991334915161,
-    "modernbert_training": 1.077272891998291,
-    "evaluation": 1.1708779335021973,
-    "reporting": 0.4519805908203125,
-    "total": 2203.6608939170837
+    "data_collection": 67.83199572563171,
+    "preprocessing": 0.08800029754638672,
+    "word2vec_training": 0.18968462944030762,
+    "modernbert_training": 6.607248783111572,
+    "evaluation": 0.0021979808807373047,
+    "reporting": 1.3185806274414062,
+    "total": 76.0422568321228
   },
   "status": "completed",
   "output_directory": "results"

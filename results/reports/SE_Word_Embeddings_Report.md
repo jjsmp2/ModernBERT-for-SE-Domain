@@ -13,16 +13,16 @@
 
 ## Data Collection Summary
 
-- **Total Documents**: 2451
+- **Total Documents**: 35
 - **Sources**: Wikipedia, GitHub, Stack Overflow, ArXiv
 - **Quality**: Real data from multiple SE sources
 
 ## Model Analysis
 
 ### Word2Vec Results
-- **Vocabulary Size**: 1339
-- **Vector Dimensions**: 300
-- **Training Time**: 2.8189809322357178 seconds
+- **Vocabulary Size**: 438
+- **Vector Dimensions**: 50
+- **Training Time**: 0.12202572822570801 seconds
 
 ### ModernBERT Results
 - **Model Type**: ModernBERT (Transformer)
@@ -45,4 +45,4 @@
 This study demonstrates the complementary nature of Word2Vec and ModernBERT for SE text analysis. Word2Vec provides fast, reliable baseline performance, while ModernBERT offers advanced contextual understanding capabilities.
 
 ---
-*Report generated on 2025-06-20 03:29:10*
+*Report generated on 2026-06-26 20:16:40*

@@ -1,0 +1,64 @@
+{
+  "model": "fastText (skipgram, dim=100)",
+  "training_time_sec": 1.72,
+  "intrinsic": {
+    "word_similarity_spearman": 0.041,
+    "analogical_reasoning": {
+      "overall": 33.0,
+      "by_category": {
+        "Language_Paradigm": {
+          "correct": 10,
+          "attempted": 20,
+          "accuracy": 50.0
+        },
+        "Tool_Purpose": {
+          "correct": 11,
+          "attempted": 20,
+          "accuracy": 55.0
+        },
+        "Concept_Artifact": {
+          "correct": 4,
+          "attempted": 20,
+          "accuracy": 20.0
+        },
+        "Stack_Relationship": {
+          "correct": 7,
+          "attempted": 20,
+          "accuracy": 35.0
+        },
+        "SE_Process": {
+          "correct": 1,
+          "attempted": 20,
+          "accuracy": 5.0
+        }
+      },
+      "total": 100
+    },
+    "vocabulary_coverage_pct": 100.0,
+    "clustering_silhouette": 0.547
+  },
+  "extrinsic": {
+    "document_classification": {
+      "f1_weighted": 0.185,
+      "train_size": 48,
+      "test_size": 12,
+      "classes": [
+        "design",
+        "implementation",
+        "maintenance",
+        "requirements",
+        "testing"
+      ],
+      "split": "80/20"
+    },
+    "semantic_search": {
+      "ndcg_at_10": 0.674,
+      "n_queries": 10,
+      "corpus_size": 60
+    },
+    "code_text_alignment": {
+      "mrr": 0.648,
+      "n_pairs": 10
+    }
+  }
+}
