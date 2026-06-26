@@ -76,8 +76,8 @@ This project supports two main configurations: a quick test run and a full-scale
 ```text
 SE_WE/
 ├── config/                         # Configuration files for execution
-│   ├── test.yaml                   # Fast pipeline verification run (test)
-│   └── fullscale.yaml              # Complete evaluation run
+│   ├── test.yaml                   # Fast pipeline verification run
+│   └── fullscale.yaml              # Complete 18-minute evaluation run
 ├── results/                        # All pipeline-generated outputs
 │   ├── data/
 │   │   ├── raw/                    # Collected raw domain data
@@ -88,10 +88,9 @@ SE_WE/
 │   ├── evaluations/                # Raw metric outputs & tracking logs
 │   │   ├── baseline_comparison.json # Baseline evaluations (GloVe, FastText)
 │   │   └── comprehensive_evaluation.json # Deep evaluation metrics
-│   ├── reports/                    # Reporting texts
-│   │   ├── evaluation_summary.txt  # Quick-read terminal text summary
-│   │ 
-│   ├   logs/                       # System execution trace files
+│   ├── reports/                    # Academic texts & formatting scripts
+│   │   └── evaluation_summary.txt  # Quick-read terminal text summary
+│   └── logs/                       # System execution trace files
 │       └── se_embeddings.log       # Debugging and run tracking data
 ├── src/                            # Source code repository files
 │   ├── models/                     # Model-specific tracking scripts
