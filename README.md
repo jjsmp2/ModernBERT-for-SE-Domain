@@ -3,14 +3,10 @@ Title: ModernBERT for Software Engineering: Domain Adaptation, Contextual Embedd
 
 ## Overview
 
-This project implements a comprehensive framework for the collection, preprocessing, training, and evaluation of word embedding models specifically tailored for the Software Engineering (SE) domain. We compare traditional Word2Vec models with transformer-based approaches (ModernBERT) to understand their performance, computational trade-offs, and applicability in various SE tasks.
+This work implements a comprehensive framework for the collection, preprocessing, training, and evaluation of word embedding models specifically tailored for the Software Engineering (SE) domain. We compare the traditional static embedding models viz. (Word2Vec, gloVe and fastText) with transformer-based approaches (ModernBERT) to understand their performance, computational trade-offs, and applicability in various SE tasks.
 
 ## Authors
-
-- **Rahul Velpula** (ravelpul@utica.edu)
-- **Aryan KC** (arkc@utica.edu)
-- **Unnati Shah** (unshah@utica.edu)
-- **Siba Mishra** (sibamishracse@gmail.com)
+Anonymous
 
 ## Key Features
 
@@ -106,39 +102,7 @@ SE-Word-Embeddings-Project/
 └── logs/
 
 
-## Results Summary
-
-Our comparative analysis highlights the trade-offs between traditional and transformer-based approaches:
-
-| Metric                      | Word2Vec      | ModernBERT (Expected/Achieved) | Improvement/Ratio |
-|-----------------------------|---------------|--------------------------------|-------------------|
-| **Intrinsic Evaluation**    |               |                                |                   |
-| Word Similarity (Spearman ρ)| -0.049        | 0.412                          | +0.461            |
-| Analogical Reasoning        | 0%            | 45%                            | +45%              |
-| Vocabulary Coverage         | 35%           | 67%                            | +32%              |
-| Clustering Quality (Silhouette)| 0.095         | 0.342                          | +0.247            |
-| **Extrinsic Evaluation**    |               |                                |                   |
-| Document Classification (F1)| 0.0           | 0.73                           | +0.73             |
-| Semantic Search (F1)        | 0.12          | 0.68                           | +0.56             |
-| Code-Text Alignment (F1)    | -             | 0.59                           | New capability    |
-| **Computational Analysis**  |               |                                |                   |
-| Training Time               | 2.82s         | 42.3 min                       | 15x               |
-| Memory Usage                | <1GB          | 8GB                            | 8x                |
-| Model Size                  | 1.6MB         | 500MB                          | 312x              |
-| Inference Speed             | 0.006ms       | 0.15ms                         | 25x               |
-
 *Note: ModernBERT results are based on successful implementation and evaluation within the project, reflecting the comparative analysis.* 
-
-## Future Work
-
--   Further optimization of ModernBERT training for larger datasets and distributed environments.
--   Expansion of evaluation benchmarks to include more diverse SE-specific tasks (e.g., bug localization, API recommendation).
--   Exploration of multilingual SE word embeddings.
--   Integration of other transformer models (e.g., CodeBERT, RoBERTa) for broader comparison.
-
-## Acknowledgments
-
-We extend our gratitude to the open-source communities of Wikipedia, GitHub, Stack Overflow, and ArXiv for providing the invaluable data sources that made this research possible. Special thanks to the authors of foundational papers in NLP and Software Engineering that guided our methodology.
 
 ## License
 
