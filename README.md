@@ -73,33 +73,37 @@ This project supports two main configurations: a quick test run and a full-scale
 
 ## Project Structure
 
-SE-Word-Embeddings-Project/
-├── config/                      # Configuration files for test and full-scale runs
-│   ├── fullscale.yaml
-│   └── test.yaml
-├── src/                         # Source code for data, models, evaluation, etc.
+```text
+SE_WE/
+├── config/                         # Configuration files for execution
+│   ├── test.yaml                   # Fast pipeline verification run
+│   └── fullscale.yaml              # Complete 18-minute evaluation run
+├── results/                        # All pipeline-generated outputs
 │   ├── data/
-│   │   ├── collector.py         # Real data collection from APIs
-│   │   └── preprocessor.py      # Data cleaning and processing
-│   ├── models/
-│   │   ├── word2vec_model.py    # Word2Vec implementation
-│   │   └── modernbert_model.py  # ModernBERT implementation
-│   ├── evaluation/
-│   │   └── evaluator.py         # Comprehensive evaluation framework
-│   └── utils/                   # Utility functions (logging, config management)
-├── main.py                      # Main entry point for the pipeline
-├── requirements.txt             # Python dependencies
-├── .gitignore                   # Specifies intentionally untracked files to ignore
-├── README.md                    # Project overview (this file)
-├── LICENSE                      # Project license (e.g., MIT License)
-└── results/                     # Directory for generated outputs (models, reports, logs)
-├── data/
-│   ├── raw/
-│   └── processed/
-├── models/
-├── evaluations/
-├── reports/
-└── logs/
+│   │   ├── raw/                    # Collected raw domain data
+│   │   └── processed/              # Tokenized, cleaned, and split data
+│   ├── models/                     # Saved local model weights & layers
+│   │   ├── modernbert/             # ModernBERT tokenizer and model files
+│   │   └── word2vec/               # Saved Word2Vec embedding weights
+│   ├── evaluations/                # Raw metric outputs & tracking logs
+│   │   ├── baseline_comparison.json # Baseline evaluations (GloVe, FastText)
+│   │   └── comprehensive_evaluation.json # Deep evaluation metrics
+│   ├── reports/                    # Academic texts & formatting scripts
+│   │   ├── evaluation_summary.txt  # Quick-read terminal text summary
+│   │   └── evaluation_chart.tex    # Monochrome LaTeX/TikZ code source
+│   ├── figures/                    # Generated charts and diagrams
+│   │   └── baseline_vs_contextual.png # Black & White evaluation graph
+│   └── logs/                       # System execution trace files
+│       └── se_embeddings.log       # Debugging and run tracking data
+├── src/                            # Source code repository files
+│   ├── models/                     # Model-specific tracking scripts
+│   │   ├── word2vec_model.py       # Word2Vec lifecycle execution
+│   │   └── modernbert_model.py     # ModernBERT Transformer setup
+│   ├── evaluate_fasttext_glove.py  # Static baseline evaluation loop
+│   └── main.py                     # Primary project orchestration runner
+├── venv/                           # Isolated local Python environment (Ignored)
+├── .gitignore                      # Git exclusion filters (weights, venv, etc.)
+└── README.md                       # Documentation overview
 
 
 *Note: ModernBERT results are based on successful implementation and evaluation within the project, reflecting the comparative analysis.* 
