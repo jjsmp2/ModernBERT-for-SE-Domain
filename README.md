@@ -1,4 +1,5 @@
-# SE Word Embeddings Comparison Project
+# Software Engineering (SE) Domain Specific Embeddings: Comparative Study. 
+Title: ModernBERT for Software Engineering: Domain Adaptation, Contextual Embedding, and Empirical Trade-off Analysis
 
 ## Overview
 
